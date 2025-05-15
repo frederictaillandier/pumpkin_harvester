@@ -32,10 +32,5 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt # Install requests from requirements.txt
-      - name: debug
-        run: |
-          ls
-          pwd
-
       - name: Run harvest script
-        run: python harvest_pumpkins.py
+        run: python harvest.py
