@@ -13,7 +13,7 @@ jobs:
     env:
       WORKER: ${{ secrets.WORKER }}
       TOKEN: ${{ secrets.API_TOKEN }}
-      BARN: ${{ secrets.BARN_API_URL }}
+      BARN: ${{ secrets.BARN }}
       PUMPKIN_FIELD: ${{ secrets.PUMPKIN_FIELD }}
       TRACTOR: ${{ secrets.TRACTOR }}
       TRAILER: ${{ secrets.TRAILER }}
