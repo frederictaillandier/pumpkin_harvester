@@ -12,14 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
       WORKER: ${{ secrets.WORKER }}
-      TOKEN: ${{ secrets.API_TOKEN }}
+      TOKEN: ${{ secrets.TOKEN }}
       BARN: ${{ secrets.BARN }}
       PUMPKIN_FIELD: ${{ secrets.PUMPKIN_FIELD }}
-      TRACTOR: ${{ secrets.TRACTOR }}
-      TRAILER: ${{ secrets.TRAILER }}
-      PITCHFORK: ${{ secrets.PITCHFORK }}
       HARVEST_SPOT: ${{ secrets.HARVEST_SPOT }}
       HARVEST_ACTION: ${{ secrets.HARVEST_ACTION }}
+      PUMPKIN_QUERY: ${{ secrets.HARVEST_ACTION }}
+      PUMPKIN: ${{ secrets.HARVEST_ACTION }}
 
     steps:
       - name: Checkout code
