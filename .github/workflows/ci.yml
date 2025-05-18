@@ -17,8 +17,8 @@ jobs:
       PUMPKIN_FIELD: ${{ secrets.PUMPKIN_FIELD }}
       HARVEST_SPOT: ${{ secrets.HARVEST_SPOT }}
       HARVEST_ACTION: ${{ secrets.HARVEST_ACTION }}
-      PUMPKIN_QUERY: ${{ secrets.HARVEST_ACTION }}
-      PUMPKIN: ${{ secrets.HARVEST_ACTION }}
+      PUMPKIN_QUERY: ${{ secrets.PUMPKIN_QUERY }}
+      PUMPKIN: ${{ secrets.PUMPKIN }}
 
     steps:
       - name: Checkout code
