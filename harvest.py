@@ -80,6 +80,7 @@ def harvest_pumpkin(pumpkin_field, token):
             if len (harvestable_pumpkins) > 0:
                 print(f"Pumpkin #{harvestable_pumpkins[-1]['number'] } is ripe.")
                 harvest = f"{harvest_spot}{harvestable_pumpkins[-1]['number']}/{harvest_action}"
+                print(harvest[1:])
                 harvest_response = requests.put(harvest, headers=headers)
                 if harvest_response.status_code == 200:
                     print(f"Successfully harvested Pumpkin #{harvestable_pumpkins[-1]['number']}.")
@@ -90,5 +91,5 @@ def harvest_pumpkin(pumpkin_field, token):
     else:
         print(f"Error fetching pumpkins. Status code: {harvestable_pumpkins_response.status_code}")
 
-if count_pumpkins_in_barn(token, barn, pumpkin_query, pumpkin):
-    harvest_pumpkin(pumpkin_field, token)
+#if count_pumpkins_in_barn(token, barn, pumpkin_query, pumpkin):
+harvest_pumpkin(pumpkin_field, token)
