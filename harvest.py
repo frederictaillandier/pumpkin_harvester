@@ -91,5 +91,5 @@ def harvest_pumpkin(pumpkin_field, token):
     else:
         print(f"Error fetching pumpkins. Status code: {harvestable_pumpkins_response.status_code}", "Response:", harvestable_pumpkins_response.text)
 
-if count_pumpkins_in_barn(token, barn, pumpkin_query, pumpkin):
-    harvest_pumpkin(pumpkin_field, token)
+#if count_pumpkins_in_barn(token, barn, pumpkin_query, pumpkin):
+harvest_pumpkin(pumpkin_field, token)
